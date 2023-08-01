@@ -1,0 +1,5 @@
+models/** filter=lfs diff=lfs merge=lfs -text
+models/multiclass_models/* filter=lfs diff=lfs merge=lfs -text
+models/multilabel_models/* filter=lfs diff=lfs merge=lfs -text
+models/multilabel_models/ML[[:space:]]models/* filter=lfs diff=lfs merge=lfs -text
+models/multiclass_models/ML[[:space:]]models/* filter=lfs diff=lfs merge=lfs -text

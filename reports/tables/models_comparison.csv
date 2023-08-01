@@ -1,0 +1,17 @@
+type,model,accuracy,f1_weighted,jaccard
+multi_label,bert_tuned,0.396,0.508,0.471
+multi_class,bert_tuned,0.462,0.4,0.462
+multi_label,log_reg_chain_tuned,0.36,0.43,0.427
+multi_class,log_reg_tuned,0.41,0.325,0.41
+multi_class,log_reg,0.391,0.302,0.391
+multi_label,lgbm_chain,0.292,0.43,0.381
+multi_label,log_reg_chain,0.313,0.36,0.368
+multi_class,lstm_pretrained_word2vec,0.368,,0.368
+multi_class,lstm_fasttext,0.367,,0.367
+multi_label,ridge_tuned,0.242,,0.342
+multi_class,random_forest,0.327,0.234,0.327
+multi_class,random_forest_tuned,0.327,0.232,0.327
+multi_label,ridge,0.261,0.39,0.313
+multi_class,bayes,0.23,0.086,0.23
+multi_label,random_forest,0.069,,0.079
+multi_label,bayes_chain,0.001,,0.001
