@@ -166,5 +166,5 @@ A short description of the project.
     │   │   ├── predict.py
     │   │   └── process_dataset.py
 --------
-> developer `Rentiuk Vitalii` (`vital.rentyk03@gmail.com`)
+developer `Rentiuk Vitalii` (`vital.rentyk03@gmail.com`)
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
