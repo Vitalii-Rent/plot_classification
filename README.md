@@ -5,6 +5,10 @@
 
 The objective is classification of genres based on plot section from wikipedia. More broadly this project allows any sort of classification of texts for multiclass or multilabel problems with little or no changes in code for a wide range of models - classical ml, recurent nn or transformers.
 
+## Data
+
+Dataset I used is a kaggle dataset Wikipedia Movie Plots. The dataset contains descriptions of 34,886 movies from around the world. 2 columns my work revolves around are Plot - Long form description of movie plot and Genre - Movie Genre(s). The dataset can be accessed by the following link - https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots or in data/raw folder.
+
 ## Explorative results
 
 Results are following - multiclasss models achieved highest full match scores while multilabel - jaccard - intersection with target. I've tried a number of models including nn ones - LSTM and BERT. The best models based on metrics in both mlc and mll appeared to be fine-tuned berts the next model is single or chain of logistic regressions. Only those two models were also fit on a specific subset of labels containing only the most frequent ones. Both of these are included in predict scripts considering log_reg model is significantly faster and easier to fit. 
