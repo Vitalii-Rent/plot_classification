@@ -11,9 +11,12 @@ Dataset I used is a kaggle dataset Wikipedia Movie Plots. The dataset contains d
 
 ## Explorative results
 
-Results are following - multiclasss models achieved highest full match scores while multilabel - jaccard - intersection with target. I've tried a number of models including nn ones - LSTM and BERT. The best models based on metrics in both mlc and mll appeared to be fine-tuned berts the next model is single or chain of logistic regressions. Only those two models were also fit on a specific subset of labels containing only the most frequent ones. Both of these are included in predict scripts considering log_reg model is significantly faster and easier to fit. 
+The most interesting explorative result is information about the most important words that give models the most information by genre. Following information is contained in figures with words importances in reports/figures folder. 
 
 ## Modeling results
+
+Multiclasss models achieved highest full match scores while multilabel - jaccard - intersection with target. I've tried a number of models including nn ones - LSTM and BERT. The best models based on metrics in both mlc and mll appeared to be fine-tuned berts the next model is single or chain of logistic regressions. Only those two models were also fit on a specific subset of labels containing only the most frequent ones. Both of these are included in predict scripts considering log_reg model is significantly faster and easier to fit. 
+
 Columns description :
 - accuracy in this context is a number of correctly predicted samples/all samples, in multi-label case full-match accuracy is meant
 - jaccard score - in multiclass context is the same as accuracy, in multilabel context - number of individually correctly classified labels devided by all samples - an adequate equivalent of accuracy for multilabel models.
