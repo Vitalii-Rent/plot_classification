@@ -28,8 +28,8 @@ def process_data(input_filepath):
 @click.argument('input_filepath', type=click.Path(exists=True))
 @click.argument('output_filepath', type=click.Path())
 def main(input_filepath, output_filepath):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
+    """ Runs data processing scripts to turn interim data from (../interim) into
+        cleaned and processed data ready to be analyzed and used in models (saved in ../processed).
     """
     logger = logging.getLogger(__name__)
     logger.info('processing texts before creating embeddings')
