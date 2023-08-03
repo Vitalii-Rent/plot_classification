@@ -82,7 +82,8 @@ def decode_preds(preds):
 @click.argument('output_filepath', type=click.Path())
 @click.argument('model_type', type=click.Choice(['log_reg', 'bert'], case_sensitive=False))
 def main(input_filepath, output_filepath, model_type):
-
+    """ Predicts labels of the specified file using fitted model and saves the output
+    """
     logger = logging.getLogger(__name__)
     logger.info('predict labels of movie plots')
     if model_type == 'log_reg':
