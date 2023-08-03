@@ -92,8 +92,8 @@ def fit_bert():
 @click.argument('output_filepath', type=click.Path())
 @click.argument('model_type', type=click.Choice(['log_reg', 'bert'], case_sensitive=False))
 def main(output_filepath, model_type):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
+    """ Runs script that fits the specified model - log_reg or bert 
+         based in the argument and saves it in the specified path.
     """
     logger = logging.getLogger(__name__)
     logger.info('predict labels of movie plots')
